@@ -10,25 +10,15 @@
     return v;
 }
 
-void DisplayBoard(std::vector<std::vector<int>> v) {
-    for (int i = 0; i < v.size(); i++) {
-        for (int j = 0; j < v[i].size(); j++) {
-            std::cout << v[i][j] << " ";
-        }
-        std::cout << std::endl;
-
-    }
-}
-
-int main() {
-     std::vector<std::vector<int>> board = CreateBoard();
-     DisplayBoard(board);
-}
-
 void DisplayBoard(std::vector<std::vector<int>> board){
 	for (int i = 0; i < board.size(); i++){
 		for (int j = 0; j < board[i].size(); j++)
 			std::cout << board[i][j] << " ";
 		std::cout << std::endl;
 	}
+}
+
+int main() {
+     std::vector<std::vector<int>> board = CreateBoard();
+     DisplayBoard(board);
 }
